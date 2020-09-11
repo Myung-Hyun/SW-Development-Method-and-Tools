@@ -16,10 +16,9 @@ class TestStringMethods(unittest.TestCase):
         with self.assertRaises(TypeError):
             s.split(2)
 
-#if __name__ == '__main__':
-#    unittest.main()
-#jupyter의 커널명이 sys.argv의 첫 파라미터로 unittest.main에 전달되기 때문에 에러 발생. 아래와 같이 수정.
-
-
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
+
+#(jupyter notebook) jupyter의 커널명이 sys.argv의 첫 파라미터로 unittest.main에 전달되기 때문에 에러 발생. 아래와 같이 수정.
+#if __name__ == '__main__':
+#    unittest.main(argv=['first-arg-is-ignored'], exit=False)
